@@ -83,8 +83,8 @@ main {
 
 .project .content:hover .text {
     opacity:1;
-    transform: translateY(250px);
-    -webkit-transform: translateY(250px);
+    transform: translateY(150px);
+    -webkit-transform: translateY(150px);
 }
 
 .bloc .content:hover { opacity:1; } 
@@ -100,6 +100,11 @@ main {
     opacity:1;
     transform: translateY(100px);
     -webkit-transform: translateY(100px);
+}
+
+.bloc.bloc_2 .content:hover .text {
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
 }
 
 .project > img {
@@ -138,6 +143,47 @@ main {
     }
     .desc > p.bis {
         font-size: 16px;
+    }
+    .bloc > img {
+        height: 200px;
+    }
+    .project .content:hover .text {
+        opacity:1;
+        transform: translateY(100px);
+        -webkit-transform: translateY(100px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .desc > p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .desc > p.bis {
+        font-size: 16px;
+    }
+    .bloc > img {
+        height:150px;
+    }
+    .project .content:hover .text {
+        opacity:1;
+        transform: translateY(80px);
+        -webkit-transform: translateY(80px);
+    }
+    .bloc .content .text {
+        font-size: 20px;
+    }
+    .grid {
+        grid-template-rows: 200px 200px 200px;
+    }
+    .bloc .content:hover .text {
+        opacity:1;
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+    }
+    .project > .content > .text {
+        font-size: 32px;
     }
 }
 
