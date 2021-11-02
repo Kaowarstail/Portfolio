@@ -24,11 +24,11 @@ main {
 }
 
 .image > img {
-    width: 75vw;
+    width: 50vw;
     border-radius: 50000px;
     border: 2px solid red;
-    margin-left: calc(25vw / 2);
-    margin-right: calc(25vw / 2);
+    margin-left: 25vw;
+    margin-right: 25vw;
     margin-top: 2vh;
 }
 
@@ -50,7 +50,7 @@ main {
 .grid2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 600px;
+    grid-template-rows: 1fr;
     column-gap: 8px;
     row-gap: 8px; 
 }
@@ -118,4 +118,36 @@ main {
     width: 50vw;
     text-align: center;
     font-size: 48px;
+}
+
+.desc > p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+.desc > p.bis {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px){
+    .desc > p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .desc > p.bis {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .desc > p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .desc > p.bis {
+        font-size: 12px;
+    }
 }
