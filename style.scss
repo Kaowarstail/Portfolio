@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -43,12 +44,78 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px;
     column-gap: 8px;
-    row-gap: 8px;
-    margin: 50px;
+    row-gap: 8px;   
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+    column-gap: 8px;
+    row-gap: 8px; 
 }
 
 .bloc {
     border: 2px solid white;
     display: flex;
-    
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.content {
+    @include content;
+}
+
+.project > .content {
+    @include content;
+    height: 600px;
+}
+
+.project .content:hover { opacity:1; } 
+.project .content .text {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    font-size: 24px;
+}
+
+.project .content:hover .text {
+    opacity:1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+}
+
+.bloc .content:hover { opacity:1; } 
+.bloc .content .text {
+    height:0;
+    opacity:1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    font-size: 24px;
+}
+
+.bloc .content:hover .text {
+    opacity:1;
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+}
+
+.project > img {
+    width: 100%;
+}
+
+.project {
+    border: 2px solid white;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project > .content > .text {
+    width: 50vw;
+    text-align: center;
+    font-size: 48px;
 }

@@ -1,0 +1,16 @@
+@mixin content {
+    opacity:0;
+    font-size: 40px;
+    position:absolute;
+    top:0;
+    left:0;
+    color:#ffffff;
+    background-color:rgba(200,200,200,0.5);
+    height:300px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align:center;
+}
