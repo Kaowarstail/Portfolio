@@ -1,0 +1,32 @@
+@import "scss/abstract/variables",
+        "scss/abstract/mixins",
+        "scss/components/buttons",
+        "scss/layout/header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+    flex-direction: column;
+}
+
+main {
+    padding-top: 10vh;
+    height: 100%;
+}
+
+img {
+    width: 75vw;
+    border-radius: 50000px;
+    border: 2px solid red;
+    margin-left: calc(25vw / 2);
+    margin-right: calc(25vw / 2);
+    margin-top: 2vh;
+}

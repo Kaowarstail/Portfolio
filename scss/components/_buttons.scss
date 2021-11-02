@@ -1,0 +1,32 @@
+.CV {
+    background-color: #d62929;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    left: 90vw;
+}
+
+.CV > a {
+    text-align: center;
+    
+}
+
+.navbar_links { 
+    display:flex;
+    padding:0 10px;
+    cursor: pointer;
+    
+}
+
+a { 
+    color:white;
+    text-decoration:none;
+    padding-left: 9px;
+    margin-right: 2vw;
+}
