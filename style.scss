@@ -22,11 +22,33 @@ main {
     height: 100%;
 }
 
-img {
+.image > img {
     width: 75vw;
     border-radius: 50000px;
     border: 2px solid red;
     margin-left: calc(25vw / 2);
     margin-right: calc(25vw / 2);
     margin-top: 2vh;
+}
+
+.bloc > img {
+    height: 290px;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    column-gap: 8px;
+    row-gap: 8px;
+    margin: 50px;
+}
+
+.bloc {
+    border: 2px solid white;
+    display: flex;
+    
 }
