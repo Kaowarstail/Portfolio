@@ -1,5 +1,5 @@
 .CV {
-    background-color: #d62929;
+    background-color: $color-butons;
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -33,4 +33,19 @@ a {
     text-decoration:none;
     padding-left: 9px;
     margin-right: 2vw;
+}
+
+.buton {
+    display: flex;
+    background-color: $color-butons;
+    width: 15%;
+    margin-top: 5%;
+    text-align: left;
+    border-radius: 100px;
+}
+
+.buton > a {
+    display: flex;
+    font-size: 24px;
+    padding-left: 15%;
 }
